@@ -4,6 +4,20 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import EmailIcon from "@mui/icons-material/Email";
 import Link from "next/link";
 
+const links = [
+  "https://github.com/dallasfoley",
+  "https://www.linkedin.com/",
+  "https://www.instagram.com/dallastfoley/",
+  "/",
+];
+
+const icons = [
+  <GitHubIcon key={1} style={{ fontSize: "100px" }} />,
+  <LinkedInIcon key={2} style={{ fontSize: "100px" }} />,
+  <InstagramIcon key={3} style={{ fontSize: "100px" }} />,
+  <EmailIcon key={4} style={{ fontSize: "100px" }} />,
+];
+
 export default function Home() {
   return (
     <div className="h-screen w-full flex flex-col justify-center items-center">
@@ -14,28 +28,16 @@ export default function Home() {
         Frontend Developer
       </h1>
       <div className="flex justify-around">
-        <Link href="https://github.com/dallasfoley">
-          <GitHubIcon
+        {icons.map((icon, key) => (
+          <Link
+            href={links[key]}
+            key={key}
             className="m-5 mt-10 text-7xl text-white transition duration-500 
-        ease-in-out hover:text-red-500 hover:-translate-y-3"
-          />
-        </Link>
-        <Link href="https://www.linkedin.com/">
-          <LinkedInIcon
-            className="m-5 mt-10 text-7xl text-white transition duration-500 
-        ease-in-out hover:text-red-500 hover:-translate-y-3"
-          />
-        </Link>
-        <Link href="https://www.instagram.com/dallastfoley/">
-          <InstagramIcon
-            className="m-5 mt-10 text-7xl text-white transition duration-500 
-        ease-in-out hover:text-red-500 hover:-translate-y-3"
-          />
-        </Link>
-        <EmailIcon
-          className="text-7xl m-5 mt-10 text-white transition duration-500 
-        ease-in-out hover:text-red-500 hover:-translate-y-3"
-        />
+          ease-in-out hover:text-red-500 hover:-translate-y-3"
+          >
+            {icon}
+          </Link>
+        ))}
       </div>
     </div>
   );

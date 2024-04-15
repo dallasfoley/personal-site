@@ -6,7 +6,6 @@ import {
   faHtml5,
   faGit,
 } from "@fortawesome/free-brands-svg-icons";
-import { faCodeBranch } from "@fortawesome/free-solid-svg-icons";
 
 const SkillsTab = () => {
   return (

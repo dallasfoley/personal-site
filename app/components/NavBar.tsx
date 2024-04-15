@@ -3,6 +3,8 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCode } from "@fortawesome/free-solid-svg-icons";
 
+const links = ["", "About", "Projects", "Contact"];
+
 const NavBar = () => {
   return (
     <nav className="flex justify-between items-center w-full h-10 bg-gradient-to-l from-slate-200 to-blue-200">
@@ -17,18 +19,16 @@ const NavBar = () => {
         <h1 className="text-3xl font-bold text-white m-5">Dallas Foley</h1>
       </span>
       <div className="w-1/3 flex justify-end">
-        <Link href="/">
-          <h2 className="text-blue-400 font-bold text-xl m-5">Home</h2>
-        </Link>
-        <Link href="/about">
-          <h2 className="text-blue-400 font-bold text-xl m-5">About</h2>
-        </Link>
-        <Link href="/projects">
-          <h2 className="text-blue-400 font-bold text-xl m-5">Projects</h2>
-        </Link>
-        <Link href="/contact">
-          <h2 className="text-blue-400 font-bold text-xl m-5">Contact</h2>
-        </Link>
+        {links.map((link, key) => (
+          <Link href={`/${link.toLowerCase()}`} key={key}>
+            <h2
+              className="text-blue-400 font-bold text-xl m-5 transition duration-300 
+        ease-in-out hover:text-red-500 hover:scale-110"
+            >
+              {link === "" ? "Home" : link}
+            </h2>
+          </Link>
+        ))}
       </div>
     </nav>
   );

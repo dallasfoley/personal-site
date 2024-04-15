@@ -1,20 +1,14 @@
-const EducationTab = () => {
+const ExperienceTab = () => {
   return (
-    <div>
+    <div className="flex flex-col justify-around items-center">
       <ul>
         <li>
-          <br />
-          <span></span>
-          <br />
           <p className="text-white text-xl text-center ">
             Bachelor of Science, Mathematics | Minor in Computer Science -
             Michigan State <br /> University, Graduated 2023
           </p>
         </li>
         <li>
-          <br />
-          <span></span>
-          <br />
           <p className="text-white text-xl text-center ">
             Novi High School, Graduated 2019
           </p>
@@ -24,4 +18,4 @@ const EducationTab = () => {
   );
 };
 
-export default EducationTab;
+export default ExperienceTab;
