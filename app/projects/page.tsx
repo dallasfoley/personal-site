@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import Button from "@mui/material/Button";
 
 const URLs = [
   [
@@ -66,24 +67,14 @@ const page = () => {
                   className="transform transition-transform duration-300 hover:text-red-500 hover:scale-110 my-3"
                   href={url[0]}
                 >
-                  <button
-                    className="bg-blue-500 hover:bg-blue-500 text-white py-2 px-4 rounded 
-                  transition duration-300 ease-in-out focus:outline-none focus:shadow-outline transform hover:scale-105"
-                  >
-                    See on Github
-                  </button>
+                  <Button variant="contained">See on GitHub</Button>
                 </Link>
                 {url.length === 5 && (
                   <Link
                     href={url[4]}
                     className="transform transition-transform duration-300 hover:text-red-500 hover:scale-110 my-3"
                   >
-                    <button
-                      className="bg-blue-500 hover:bg-blue-500 text-white py-2 px-4 rounded 
-                    transition duration-300 ease-in-out focus:outline-none focus:shadow-outline transform hover:scale-105"
-                    >
-                      See Site
-                    </button>
+                    <Button variant="contained">See Site</Button>
                   </Link>
                 )}
                 <p className="text-center my-3">Tech Stack: {url[3]}</p>

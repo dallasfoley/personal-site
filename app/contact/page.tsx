@@ -1,3 +1,5 @@
+"use client";
+
 import EmailIcon from "@mui/icons-material/Email";
 import PhoneIcon from "@mui/icons-material/Phone";
 import GitHubIcon from "@mui/icons-material/GitHub";
@@ -5,6 +7,7 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import SendIcon from "@mui/icons-material/Send";
 import Link from "next/link";
+import { FormEvent } from "react";
 
 const links = [
   "https://github.com/dallasfoley",
@@ -19,6 +22,36 @@ const icons = [
 ];
 
 const page = () => {
+  const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    try {
+      // Explicitly cast event.target to HTMLFormElement
+      const form = event.target as HTMLFormElement;
+      const formData = new FormData(form);
+
+      formData.append("access_key", "a1b887f5-ca7e-4942-84d9-2879b248c238");
+      const object = Object.fromEntries(formData);
+      const json = JSON.stringify(object);
+
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: json,
+      });
+      const result = await response.json();
+      if (result.success) {
+        console.log("Submission successful:", result);
+      } else {
+        console.error("Submission failed:", result);
+      }
+    } catch (error) {
+      console.error("Error submitting form:", error);
+    }
+  };
+
   return (
     <div className="flex">
       <div className="h-screen m-0 basis-1/2 flex flex-col justify-center items-center text-white text-4xl">
@@ -46,7 +79,7 @@ const page = () => {
       <div className="h-screen m-0 basis-1/2 flex flex-col justify-around items-center">
         <h1 className="text-5xl text-blue-400 font-bold mt-10">Contact Me</h1>
         <form
-          action="submit"
+          onSubmit={(e) => handleSubmit(e)}
           className="h-screen m-0 basis-2/3 flex flex-col justify-around items-center"
         >
           <input

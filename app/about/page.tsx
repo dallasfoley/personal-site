@@ -18,7 +18,7 @@ const About = () => {
           boxShadow: "0 8px 16px rgba(0, 0, 0, 0.2)",
         }}
       >
-        <div className="flex justify-around items-start text-white text-3xl">
+        <div className="flex justify-around items-start text-white text-3xl m-5">
           <button onClick={() => setActive("about")}>
             {active === "about" ? (
               <h3

@@ -57,7 +57,7 @@ const SkillsTab = () => {
           Libraries, Frameworks and Technologies
         </p>
 
-        <div className="flex justify-around items-center">
+        <div className="flex justify-around items-center mb-3">
           <h1 className="text-2xl text-white font-bold mx-10">React.js</h1>
           <h1 className="text-2xl text-white font-bold mx-10">Next.js</h1>
           <FontAwesomeIcon
