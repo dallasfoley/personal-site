@@ -11,7 +11,7 @@ const SkillsTab = () => {
   return (
     <div className="flex flex-col justify-around items-center h-full">
       <div>
-        <p className="text-white text-center text-2xl mb-7">
+        <p className="text-blue-400 text-center text-2xl mb-7">
           Programming Languages
         </p>
         <div className="flex justify-around items-center">
@@ -31,7 +31,7 @@ const SkillsTab = () => {
         </div>
       </div>
       <div>
-        <p className="text-white text-center text-2xl mb-7">
+        <p className="text-blue-400 t text-center text-2xl mb-7">
           Markup/Styling Languages
         </p>
         <div className="flex justify-around items-center">
@@ -53,7 +53,7 @@ const SkillsTab = () => {
         </div>
       </div>
       <div>
-        <p className="text-white text-center text-2xl mb-7">
+        <p className="text-blue-400 text-center text-2xl mb-7">
           Libraries, Frameworks and Technologies
         </p>
 
