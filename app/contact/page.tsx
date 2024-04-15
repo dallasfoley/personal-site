@@ -22,36 +22,6 @@ const icons = [
 ];
 
 const page = () => {
-  const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
-    event.preventDefault();
-    try {
-      // Explicitly cast event.target to HTMLFormElement
-      const form = event.target as HTMLFormElement;
-      const formData = new FormData(form);
-
-      formData.append("access_key", "a1b887f5-ca7e-4942-84d9-2879b248c238");
-      const object = Object.fromEntries(formData);
-      const json = JSON.stringify(object);
-
-      const response = await fetch("https://api.web3forms.com/submit", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          Accept: "application/json",
-        },
-        body: json,
-      });
-      const result = await response.json();
-      if (result.success) {
-        console.log("Submission successful:", result);
-      } else {
-        console.error("Submission failed:", result);
-      }
-    } catch (error) {
-      console.error("Error submitting form:", error);
-    }
-  };
-
   return (
     <div className="flex">
       <div className="h-screen m-0 basis-1/2 flex flex-col justify-center items-center text-white text-4xl">
@@ -79,25 +49,34 @@ const page = () => {
       <div className="h-screen m-0 basis-1/2 flex flex-col justify-around items-center">
         <h1 className="text-5xl text-blue-400 font-bold mt-10">Contact Me</h1>
         <form
-          onSubmit={(e) => handleSubmit(e)}
+          action="https://api.web3forms.com/submit"
+          method="POST"
           className="h-screen m-0 basis-2/3 flex flex-col justify-around items-center"
         >
           <input
+            type="hidden"
+            name="access_key"
+            value="a1b887f5-ca7e-4942-84d9-2879b248c238"
+          />
+          <input
             type="text"
+            name="name"
             placeholder="Your name..."
             className="h-20 w-96 rounded-3xl my-5"
           />
           <input
             type="text"
+            name="email"
             placeholder="Your email..."
             className="h-20 w-96 rounded-3xl my-5"
           />
           <input
             type="text"
+            name="message"
             placeholder="Your message..."
             className="h-64 w-96 rounded-3xl my-5"
           />
-          <button className="h-20 w-20 rounded-3xl bg-slate-700">
+          <button type="submit" className="h-20 w-20 rounded-3xl bg-slate-700">
             <SendIcon style={{ fontSize: "40px", color: "white" }} />
           </button>
         </form>
