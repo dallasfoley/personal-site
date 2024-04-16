@@ -12,7 +12,7 @@ const About = () => {
     <div className="m-0 h-screen w-full flex flex-col items-center justify-around">
       <h1 className="text-6xl text-blue-400 mt-10">About Me</h1>
       <div
-        className="w-3/5 h-4/5 rounded-2xl m-32 flex flex-col justify-between"
+        className="w-3/5 rounded-2xl my-16 flex flex-col justify-between"
         style={{
           backgroundColor: "rgba(255, 255, 255, 0.1)",
           boxShadow: "0 8px 16px rgba(0, 0, 0, 0.2)",
