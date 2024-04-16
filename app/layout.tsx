@@ -13,11 +13,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className="font-sans m-0 p-0 bg-gradient-to-br w-full h-screen from-slate-200 to-blue-300">
+    <html
+      lang="en"
+      className="font-sans m-0 p-0 bg-gradient-to-br w-full min-h-screen from-slate-200 to-blue-300"
+    >
+      <body className="font-sans m-0 p-0">
         <NavBar />
         {children}
       </body>
     </html>
   );
 }
+//className="flex-1 font-sans m-0 p-0 bg-gradient-to-br w-full min-h-screen from-slate-200 to-blue-300"

@@ -24,7 +24,7 @@ const icons = [
 const page = () => {
   return (
     <div className="flex">
-      <div className="h-screen m-0 basis-1/2 flex flex-col justify-center items-center text-white text-4xl">
+      <div className="h-screen m-0 basis-1/2 flex flex-col justify-center items-center text-black text-4xl">
         <div className="flex flex-row items-center">
           <EmailIcon style={{ fontSize: "40px" }} />
           <p className="ml-5"> dallastfoley@gmail.com</p>
@@ -76,7 +76,11 @@ const page = () => {
             placeholder="Your message..."
             className="h-64 w-96 rounded-3xl my-5"
           />
-          <button type="submit" className="h-20 w-20 rounded-3xl bg-slate-700">
+          <button
+            type="submit"
+            className="h-20 w-20 rounded-3xl bg-slate-700 transition duration-300 
+        ease-in-out hover:bg-red-500 hover:scale-110"
+          >
             <SendIcon style={{ fontSize: "40px", color: "white" }} />
           </button>
         </form>

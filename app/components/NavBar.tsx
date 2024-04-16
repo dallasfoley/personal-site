@@ -15,12 +15,12 @@ const NavBar = () => {
       <span className="w-2/3 h-10 flex justify-start items-center">
         <FontAwesomeIcon
           icon={faCode}
-          color="white"
+          color="blue"
           height={30}
           width={30}
           className="ml-5"
         />
-        <h1 className="text-3xl font-bold text-white m-5">Dallas Foley</h1>
+        <h1 className="text-3xl font-bold text-blue-600 m-5">Dallas Foley</h1>
       </span>
       <div className="w-1/3 flex justify-end">
         {links.map((link, key) => (
