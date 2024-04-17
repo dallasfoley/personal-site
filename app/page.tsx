@@ -24,7 +24,8 @@ export default function Home() {
   return (
     <div className="h-screen w-full flex flex-col justify-center items-center">
       <h1 className="text-8xl text-blue-600 font-bold mt-20 mb-10">
-        Hi, I`m Dallas
+        {/* eslint-disable-next-line react/no-unescaped-entities */}
+        Hi, I'm Dallas
       </h1>
       <h1 className="text-4xl text-blue-600 font-bold mt-10 mb-20">
         Frontend Developer
