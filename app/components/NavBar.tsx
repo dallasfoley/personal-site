@@ -13,7 +13,7 @@ const NavBar = () => {
   return (
     <nav
       className="flex fixed justify-between items-center w-full h-10 
-    bg-gradient-to-l from-slate-200 to-blue-200 z-10"
+    bg-gradient-to-l from-slate-200 to-blue-300 z-10"
     >
       <span className="w-2/3 h-10 flex justify-start items-center">
         <FontAwesomeIcon

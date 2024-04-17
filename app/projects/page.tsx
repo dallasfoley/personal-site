@@ -41,7 +41,7 @@ const URLs = [
 
 const page = () => {
   return (
-    <div className="m-0 h-screen w-full min-h-screen from-slate-200 to-blue-300 flex flex-col items-center justify-around">
+    <div className="m-0 w-full min-h-screen  flex flex-col items-center justify-around">
       <h1 className="text-6xl text-blue-400 my-16">Projects</h1>
       <div className="grid grid-cols-3 grid-rows-2 gap-20 m-20">
         {URLs.map((url, key) => (
