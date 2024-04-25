@@ -1,7 +1,7 @@
 const ExperienceTab = () => {
   return (
     <div className="flex justify-between items-center h-full">
-      <div className="flex flex-col justify-around text-black text-xl m-5">
+      <div className="flex flex-col justify-around text-black text-md md:text-xl m-5">
         <h1 className="text-blue-500 font-bold text-center mb-7">Education</h1>
         <p className="my-5">
           Bachelor of Science, Mathematics | Minor in Computer Science -
@@ -9,7 +9,7 @@ const ExperienceTab = () => {
         </p>
         <p className="my-5">Novi High School, Graduated 2019</p>
       </div>
-      <div className="flex flex-col justify-around text-black text-xl">
+      <div className="flex flex-col justify-around text-black text-md md:text-xl">
         <h1 className="text-blue-500 font-bold text-center mt-8 mb-5">Work</h1>
         <div className="m-5">
           <h1 className="m-2">Aug. 2022 - Dec. 2023</h1>

@@ -54,7 +54,7 @@ const page = () => {
               alt="img"
               width={400}
               height={400}
-              className="w-full h-auto sm:w-72 sm:h-72 md:w-80 md:h-80 lg:w-96 lg:h-96
+              className=" h-auto sm:w-11/12 sm:h-11/12 md:w-80 md:h-80 lg:w-96 lg:h-96
                rounded-xl transform transition-transform duration-300 hover:scale-110"
             />
             <div
