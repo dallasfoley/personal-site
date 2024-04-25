@@ -23,14 +23,14 @@ const icons = [
 
 const page = () => {
   return (
-    <div className="flex">
-      <div className="h-screen m-0 basis-1/2 flex flex-col justify-center items-center text-black text-4xl">
+    <div className="flex flex-col md:flex-row">
+      <div className="h-screen m-10 basis-1/2 flex flex-col justify-center items-center text-black text-xl md:text-4xl">
         <div className="flex flex-row items-center">
-          <EmailIcon style={{ fontSize: "40px" }} />
-          <p className="ml-5"> dallastfoley@gmail.com</p>
+          <EmailIcon className="text-xl md:text-3xl lg:text-4xl" />
+          <p className="m-5"> dallastfoley@gmail.com</p>
         </div>
         <div className="flex flex-row m-5 items-center">
-          <PhoneIcon style={{ fontSize: "40px" }} />
+          <PhoneIcon className="text-xl md:text-3xl lg:text-4xl" />
           <p className="ml-5"> (248)-962-5493</p>
         </div>
         <div className="flex justify-around">
@@ -62,23 +62,23 @@ const page = () => {
             type="text"
             name="name"
             placeholder="Your name..."
-            className="h-20 w-96 rounded-3xl my-5"
+            className="h-14 w-72 md:h-20 md:w-96 rounded-3xl p-3 my-5"
           />
           <input
             type="text"
             name="email"
             placeholder="Your email..."
-            className="h-20 w-96 rounded-3xl my-5"
+            className="h-14 w-72 md:h-20 md:w-96 p-3 rounded-3xl my-5"
           />
           <input
             type="text"
             name="message"
             placeholder="Your message..."
-            className="h-64 w-96 rounded-3xl my-5"
+            className="h-64 w-72 md:w-96 p-3 rounded-3xl my-5"
           />
           <button
             type="submit"
-            className="h-20 w-20 rounded-3xl bg-slate-700 transition duration-300 
+            className="h-20 w-20 mb-5 rounded-3xl bg-slate-700 transition duration-300 
         ease-in-out hover:bg-red-500 hover:scale-110"
           >
             <SendIcon style={{ fontSize: "40px", color: "white" }} />

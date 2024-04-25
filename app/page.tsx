@@ -14,28 +14,28 @@ const links = [
 ];
 
 const icons = [
-  <GitHubIcon key={1} style={{ fontSize: "100px" }} />,
-  <LinkedInIcon key={2} style={{ fontSize: "100px" }} />,
-  <InstagramIcon key={3} style={{ fontSize: "100px" }} />,
-  <EmailIcon key={4} style={{ fontSize: "100px" }} />,
+  <GitHubIcon key={1} className="text-5xl  md:text-8xl" />,
+  <LinkedInIcon key={2} className="text-5xl  md:text-8xl" />,
+  <InstagramIcon key={3} className="text-5xl  md:text-8xl" />,
+  <EmailIcon key={4} className="text-5xl  md:text-8xl" />,
 ];
 
 export default function Home() {
   return (
     <div className="h-screen w-full flex flex-col justify-center items-center">
-      <h1 className="text-8xl text-blue-600 font-bold mt-20 mb-10">
+      <h1 className="text-5xl md:text-8xl text-blue-600 font-bold mt-20 mb-10">
         {/* eslint-disable-next-line react/no-unescaped-entities */}
         Hi, I'm Dallas
       </h1>
-      <h1 className="text-4xl text-blue-600 font-bold mt-10 mb-20">
+      <h1 className="text-3xl md:text-4xl text-blue-600 font-bold mt-10 mb-20">
         Frontend Developer
       </h1>
-      <div className="flex justify-around">
+      <div className="grid grid-cols-2 grid-rows-2 gap-20 md:flex justify-around">
         {icons.map((icon, key) => (
           <Link
             href={links[key]}
             key={key}
-            className="m-5 mt-10 text-7xl text-white transition duration-500 
+            className=" text-7xl text-white transition duration-500 
           ease-in-out hover:text-red-500 hover:-translate-y-3"
           >
             {icon}
