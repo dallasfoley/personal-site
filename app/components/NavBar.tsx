@@ -1,14 +1,18 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCode } from "@fortawesome/free-solid-svg-icons";
 
 const links = ["", "About", "Projects", "Contact"];
 
 const NavBar = () => {
-  const [active, setActive] = useState("");
+  const [active, setActive] = useState(localStorage.getItem("active") || "");
+
+  useEffect(() => {
+    localStorage.setItem("active", active);
+  }, [active]);
 
   return (
     <nav
