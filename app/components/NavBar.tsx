@@ -8,11 +8,22 @@ import { faCode } from "@fortawesome/free-solid-svg-icons";
 const links = ["", "About", "Projects", "Contact"];
 
 const NavBar = () => {
-  const [active, setActive] = useState(localStorage.getItem("active") || "");
+  const [active, setActive] = useState("");
 
+  // Effect to load the initial state from localStorage only on mount
   useEffect(() => {
-    localStorage.setItem("active", active);
-  }, [active]);
+    if (typeof window !== "undefined") {
+      const savedActive = localStorage.getItem("active") || "";
+      setActive(savedActive);
+    }
+  }, []); // Empty dependency array to run only once on mount
+
+  // Separate effect to save to localStorage whenever `active` changes
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      localStorage.setItem("active", active);
+    }
+  }, [active]); // Depend on `active` to update localStorage when it changes
 
   return (
     <nav
@@ -25,7 +36,7 @@ const NavBar = () => {
           color="blue"
           height={30}
           width={30}
-          className="ml-5"
+          className="ml-5 text-4xl"
         />
         <h1 className="text-3xl font-bold text-blue-600 m-5">Dallas Foley</h1>
       </span>

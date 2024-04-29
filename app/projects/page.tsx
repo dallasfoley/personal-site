@@ -9,7 +9,7 @@ const URLs = [
     "https://github.com/dallasfoley/PokeGames",
     "/poke.png",
     "PokeGames",
-    "React.js, TypeScript, Vite, CSS",
+    "React.js, TypeScript, Vite, Tailwind",
     "https://pokegames0.netlify.app/",
   ],
   [
@@ -23,13 +23,13 @@ const URLs = [
     "https://github.com/dallasfoley/ActionSudokuGame",
     "/sudoku.png",
     "Action Sudoku",
-    "C++ and CMake",
+    "C++, CMake, wxWidgets, XML",
   ],
   [
     "https://github.com/dallasfoley/CanadianExperience",
     "/canadien2.png",
     "Canadian Experience",
-    "C++ and CMake",
+    "C++, CMake, wxWidgets",
   ],
   [
     "https://github.com/dallasfoley/GraphADTImplementation",
@@ -43,23 +43,23 @@ const page = () => {
   return (
     <div className="m-0 w-full min-h-screen flex flex-col items-center justify-around">
       <h1 className="text-6xl font-bold text-blue-400 my-16">Projects</h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-20 m-20">
+      <div className="grid w-full grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-10 lg:gap-15 xl:gap-20 m-5">
         {URLs.map((url, key) => (
           <div
             key={key}
-            className="flex flex-col justify-between w-full items-center text-black text-2xl"
+            className="flex flex-col justify-between w-full items-center text-black text-2xl mt-10"
           >
             <Image
               src={url[1]}
               alt="img"
-              width={400}
-              height={400}
-              className=" h-auto sm:w-11/12 sm:h-11/12 md:w-80 md:h-80 lg:w-96 lg:h-96
+              width={300}
+              height={300}
+              className="
                rounded-xl transform transition-transform duration-300 hover:scale-110"
             />
             <div
-              className="flex flex-col justify-around items-center rounded-2xl w-full 
-              h-auto sm:w-72 sm:h-72 md:w-80 md:h-80 lg:w-96 lg:h-96 mt-20"
+              className="flex flex-col justify-around items-center rounded-2xl
+              sm:w-72 sm:h-72 md:w-72 md:h-72 lg:w-72 lg:h-72 mt-5 md:mt-10 lg:mt-15 bg-white opacity-90 shadow-lg"
               style={{
                 backgroundColor: "rgba(255, 255, 255, 0.1)",
                 boxShadow: "0 8px 16px rgba(0, 0, 0, 0.2)",
@@ -85,7 +85,7 @@ const page = () => {
                     </Button>
                   </Link>
                 )}
-                <p className="text-center text-lg md:text-3xl my-3">
+                <p className="text-center text-lg md:text-xl my-3">
                   Tech Stack: {url[3]}
                 </p>
               </div>

@@ -17,42 +17,30 @@ const SkillsTab = () => {
         <p className="text-blue-600 text-center text-lg md:text-2xl mb-7">
           Programming Languages
         </p>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-16">
-          <SiJavascript color="black" size="1/2x" className=" h-12" />
-          <SiTypescript color="black" size="1/2x" className=" h-12" />
-          <h1 className="text-3xl text-black font-bold flex items-center justify-center">
+        <div
+          className="grid grid-cols-2 md:grid-cols-4 text-2xl md:text-3xl 
+        lg:text-5xl gap-5 gap-y-20 md:gap-10"
+        >
+          <SiJavascript color="black" className="" />
+          <SiTypescript color="black" className="" />
+          <h1 className="text-lg md:text-xl lg:text-2xl text-black font-bold flex items-center justify-center">
             C/C++
           </h1>
-          <FontAwesomeIcon
-            icon={faPython}
-            color="black"
-            size="3x"
-            className=""
-          />
+          <FontAwesomeIcon icon={faPython} color="black" className="" />
         </div>
       </div>
       <div>
         <p className="text-blue-600 text-center text-lg md:text-2xl my-7">
           Markup/Styling Languages
         </p>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-16">
-          <h1 className="text-3xl text-black font-bold flex items-center justify-center">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-5 gap-y-20 md:gap-10 text-2xl md:text-3xl lg:text-5xl">
+          <h1 className="text-lg md:text-xl lg:text-2xl text-black font-bold flex items-center justify-center">
             JSX/TSX
           </h1>
-          <FontAwesomeIcon
-            icon={faHtml5}
-            color="black"
-            size="3x"
-            className="mx-10"
-          />
+          <FontAwesomeIcon icon={faHtml5} color="black" />
 
-          <FontAwesomeIcon
-            icon={faCss3}
-            color="black"
-            size="3x"
-            className="mx-10"
-          />
-          <SiTailwindcss color="black" size="1/2" className=" h-12" />
+          <FontAwesomeIcon icon={faCss3} color="black" />
+          <SiTailwindcss color="black" />
         </div>
       </div>
       <div>
@@ -60,13 +48,18 @@ const SkillsTab = () => {
           Libraries, Frameworks and Technologies
         </p>
 
-        <div className="grid grid-cols-2 md:grid-cols-6 gap-16 mb-3 text-2xl text-black font-bold mx-10">
-          <FaReact color="black" className="text-6xl" />
-          <SiNextdotjs color="black" className="text-6xl" />
-          <FaGitAlt color="black" className="text-6xl" />
-          <SiVite color="black" className="text-6xl" />
-          <h1 className="flex items-center justify-center text-3xl">Vercel</h1>
-          <SiLatex color="black" size="2x" className="text-6xl" />
+        <div
+          className="grid grid-cols-2 md:grid-cols-6 gap-5 gap-y-20 md:gap-10
+         mb-3 text-2xl md:text-3xl lg:text-5xl text-black font-bold mx-10"
+        >
+          <FaReact color="black" className="" />
+          <SiNextdotjs color="black" className="" />
+          <FaGitAlt color="black" className="" />
+          <SiVite color="black" className="" />
+          <h1 className="flex items-center justify-center text-lg md:text-xl lg:text-2xl">
+            Vercel
+          </h1>
+          <SiLatex color="black" className="" />
         </div>
       </div>
     </div>

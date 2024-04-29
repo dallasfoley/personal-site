@@ -14,10 +14,10 @@ const links = [
 ];
 
 const icons = [
-  <GitHubIcon key={1} className="text-5xl  md:text-8xl" />,
-  <LinkedInIcon key={2} className="text-5xl  md:text-8xl" />,
-  <InstagramIcon key={3} className="text-5xl  md:text-8xl" />,
-  <EmailIcon key={4} className="text-5xl  md:text-8xl" />,
+  <GitHubIcon key={1} style={{ fontSize: "90px" }} />,
+  <LinkedInIcon key={2} style={{ fontSize: "90px" }} />,
+  <InstagramIcon key={3} style={{ fontSize: "90px" }} />,
+  <EmailIcon key={4} style={{ fontSize: "90px" }} />,
 ];
 
 export default function Home() {
@@ -35,7 +35,7 @@ export default function Home() {
           <Link
             href={links[key]}
             key={key}
-            className=" text-7xl text-white transition duration-500 
+            className=" text-white transition duration-500 
           ease-in-out hover:text-red-500 hover:-translate-y-3"
           >
             {icon}

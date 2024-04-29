@@ -24,7 +24,7 @@ const icons = [
 const page = () => {
   return (
     <div className="flex flex-col md:flex-row">
-      <div className="h-screen m-10 basis-1/2 flex flex-col justify-center items-center text-black text-xl md:text-4xl">
+      <div className=" m-10 basis-1/2 flex flex-col justify-center items-center text-black text-xl md:text-4xl">
         <div className="flex flex-row items-center">
           <EmailIcon className="text-xl md:text-3xl lg:text-4xl" />
           <p className="m-5"> dallastfoley@gmail.com</p>
