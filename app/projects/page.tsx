@@ -6,11 +6,11 @@ import Button from "@mui/material/Button";
 
 const URLs = [
   [
-    "https://github.com/dallasfoley/PokeGames",
-    "/poke.png",
-    "PokeGames",
+    "https://github.com/dallasfoley/Pokedol",
+    "/poke2.png",
+    "Pokedol",
     "React.js, TypeScript, Vite, Tailwind",
-    "https://pokegames0.netlify.app/",
+    "https://pokedol.vercel.app/",
   ],
   [
     "https://github.com/dallasfoley/personal-site",
@@ -18,6 +18,12 @@ const URLs = [
     "Portfolio",
     "Next.js, React.js, TypeScript, Tailwind",
     "",
+  ],
+  [
+    "https://github.com/dallasfoley/Calculator",
+    "/calc.png",
+    "Calculator",
+    "React.js, TypeScript, Vite, CSS",
   ],
   [
     "https://github.com/dallasfoley/ActionSudokuGame",
@@ -35,7 +41,7 @@ const URLs = [
     "https://github.com/dallasfoley/GraphADTImplementation",
     "/graph.png",
     "Graph ADT",
-    "Python",
+    "Python, NumPy, MatPlotLib",
   ],
 ];
 
