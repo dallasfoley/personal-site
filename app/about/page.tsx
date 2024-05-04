@@ -13,7 +13,7 @@ const About = () => {
       <h1 className="text-6xl text-blue-400 font-bold mt-10 mb-5">About Me</h1>
 
       <div
-        className="sm:w-11/12 md:w-4/5 lg:w-3/5 rounded-2xl my-8 flex flex-col justify-between"
+        className="sm:w-11/12 md:w-4/5 lg:w-3/4 rounded-2xl my-8 flex flex-col items-center justify-between"
         style={{
           backgroundColor: "rgba(255, 255, 255, 0.1)",
           boxShadow: "0 8px 16px rgba(0, 0, 0, 0.2)",
@@ -54,7 +54,7 @@ const About = () => {
             )}
           </button>
         </div>
-        <div className="w-full max-w-4xl mx-auto rounded-2xl p-4 bg-white bg-opacity-10 shadow-lg">
+        <div className="w-full mx-auto rounded-2xl p-4 bg-white bg-opacity-10 shadow-lg">
           {active === "about" && <AboutTab />}
           {active === "experience" && <EducationTab />}
           {active === "skills" && <SkillsTab />}
