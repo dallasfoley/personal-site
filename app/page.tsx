@@ -8,7 +8,7 @@ import Link from "next/link";
 
 const links = [
   "https://github.com/dallasfoley",
-  "https://www.linkedin.com/",
+  "https://www.linkedin.com/in/dallastfoley/",
   "https://www.instagram.com/dallastfoley/",
   "https://dallastfoley.netlify.app/contact",
 ];

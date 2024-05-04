@@ -7,11 +7,10 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import SendIcon from "@mui/icons-material/Send";
 import Link from "next/link";
-import { FormEvent } from "react";
 
 const links = [
   "https://github.com/dallasfoley",
-  "https://www.linkedin.com/",
+  "https://www.linkedin.com/in/dallastfoley/",
   "https://www.instagram.com/dallastfoley/",
 ];
 
