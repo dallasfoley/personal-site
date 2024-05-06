@@ -11,7 +11,7 @@ const AboutTab = () => {
         am also very interested in the union of static site generation and
         server-side rendering and particularly how can enhance performance and
         search engine optimization and have hence been delving into Next.js. In
-        my free time, I enjoy playing guitar, channeling creativity into
+        my free time, I enjoy playing guitar and channeling my creativity into
         songwriting. I also enjoy diving into the competitive world of League of
         Legends and spending quality time with my friends and cat, Piplup.
       </p>

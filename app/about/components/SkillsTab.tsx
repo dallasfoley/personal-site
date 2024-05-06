@@ -8,6 +8,8 @@ import {
   SiVite,
   SiLatex,
   SiVercel,
+  SiReact,
+  SiGit,
 } from "react-icons/si";
 import { FaReact, FaGitAlt } from "react-icons/fa";
 
@@ -41,18 +43,18 @@ const SkillsTab = () => {
           <SiTailwindcss color="black" />
         </div>
       </div>
-      <div>
+      <div className="flex flex-col items-center">
         <p className="text-blue-600 text-center text-lg md:text-2xl my-7">
           Libraries, Frameworks and Technologies
         </p>
 
         <div
-          className="grid grid-cols-6 text-2xl md:text-3xl 
-          lg:text-5xl w-full md:gap-10 text-black font-bold mx-10"
+          className="flex justify-between items-center text-2xl md:text-3xl 
+          lg:text-5xl w-full md:gap-10 text-black font-bold mr-10"
         >
-          <FaReact color="black" className="" />
+          <SiReact color="black" className="" />
           <SiNextdotjs color="black" className="" />
-          <FaGitAlt color="black" className="" />
+          <SiGit color="black" className="" />
           <SiVite color="black" className="" />
           <SiVercel color="black" />
           <SiLatex color="black" className="" />
