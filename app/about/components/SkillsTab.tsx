@@ -50,7 +50,7 @@ const SkillsTab = () => {
 
         <div
           className="flex justify-between items-center text-2xl md:text-3xl 
-          lg:text-5xl w-full md:gap-10 text-black font-bold mr-10"
+          lg:text-5xl w-full md:gap-10 text-black font-bold"
         >
           <SiReact color="black" className="" />
           <SiNextdotjs color="black" className="" />
